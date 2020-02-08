@@ -1,0 +1,14 @@
+
+entity Driver {
+	name String,
+    lastName String
+    mileage Integer
+}
+entity Car {
+	model String,
+    engine String,
+    serialNo String
+}
+relationship ManyToMany {
+  Car{driver} to Driver{car}
+}
